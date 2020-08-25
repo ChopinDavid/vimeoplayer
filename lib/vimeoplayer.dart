@@ -217,9 +217,12 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
                           ),
                     onPressed: () {
                       setState(() {
-                        _controller.value.isPlaying
-                            ? _controller.pause()
-                            : _controller.play();
+                        if (_controller.value.isPlaying) {
+                          _controller.pause();
+                        } else {
+                          _controller.play();
+                          _overlay = false;
+                        }
                       });
                     }),
               ),
