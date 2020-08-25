@@ -208,13 +208,14 @@
         <entry key="vimeoplayer">
           <value>
             <list>
-              <option value="$USER_HOME$/Desktop/Development/flutter/.pub-cache/hosted/pub.dartlang.org/vimeoplayer-0.0.2/lib" />
+              <option value="$USER_HOME$/Desktop/Development/flutter/.pub-cache/git/vimeoplayer-a8fa4af2b3b3230bc5440fd26e0555ab7760f568/lib" />
             </list>
           </value>
         </entry>
       </option>
     </properties>
     <CLASSES>
+      <root url="file://$USER_HOME$/Desktop/Development/flutter/.pub-cache/git/vimeoplayer-a8fa4af2b3b3230bc5440fd26e0555ab7760f568/lib" />
       <root url="file://$USER_HOME$/Desktop/Development/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.4.2/lib" />
       <root url="file://$USER_HOME$/Desktop/Development/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.0.0/lib" />
       <root url="file://$USER_HOME$/Desktop/Development/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.0.0/lib" />
@@ -240,7 +241,6 @@
       <root url="file://$USER_HOME$/Desktop/Development/flutter/.pub-cache/hosted/pub.dartlang.org/video_player-0.10.12/lib" />
       <root url="file://$USER_HOME$/Desktop/Development/flutter/.pub-cache/hosted/pub.dartlang.org/video_player_platform_interface-2.1.0/lib" />
       <root url="file://$USER_HOME$/Desktop/Development/flutter/.pub-cache/hosted/pub.dartlang.org/video_player_web-0.1.3+2/lib" />
-      <root url="file://$USER_HOME$/Desktop/Development/flutter/.pub-cache/hosted/pub.dartlang.org/vimeoplayer-0.0.2/lib" />
       <root url="file://$USER_HOME$/Desktop/Development/flutter/bin/cache/pkg/sky_engine/lib" />
       <root url="file://$USER_HOME$/Desktop/Development/flutter/packages/flutter/lib" />
       <root url="file://$USER_HOME$/Desktop/Development/flutter/packages/flutter_test/lib" />

@@ -177,7 +177,7 @@
     },
     {
       "name": "vimeoplayer",
-      "rootUri": "file:///Users/chopind/Desktop/Development/flutter/.pub-cache/hosted/pub.dartlang.org/vimeoplayer-0.0.2",
+      "rootUri": "file:///Users/chopind/Desktop/Development/flutter/.pub-cache/git/vimeoplayer-a8fa4af2b3b3230bc5440fd26e0555ab7760f568/",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     },
@@ -188,7 +188,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-08-25T18:34:25.250828Z",
+  "generated": "2020-08-25T18:47:02.044764Z",
   "generator": "pub",
   "generatorVersion": "2.9.1"
 }

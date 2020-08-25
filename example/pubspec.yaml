@@ -23,8 +23,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  vimeoplayer: ^0.0.1
-
+  vimeoplayer:
+    git:
+      url: https://github.com/ChopinDavid/vimeoplayer.git
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

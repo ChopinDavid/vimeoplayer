@@ -16,6 +16,7 @@ class VimeoPlayer extends StatefulWidget {
   final Color bufferedColor;
   final Color progressIndicatorColor;
   final bool fullscreenable;
+  final bool dismissOverlayOnPlay;
 
   VimeoPlayer({
     @required this.id,
@@ -25,6 +26,7 @@ class VimeoPlayer extends StatefulWidget {
     this.bufferedColor = const Color(0x5583D8F7),
     this.progressIndicatorColor = const Color(0xFF22A3D2),
     this.fullscreenable = true,
+    this.dismissOverlayOnPlay = true,
     Key key,
   }) : super(key: key);
 
@@ -221,7 +223,9 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
                           _controller.pause();
                         } else {
                           _controller.play();
-                          _overlay = false;
+                          if (widget.dismissOverlayOnPlay) {
+                            _overlay = false;
+                          }
                         }
                       });
                     }),
