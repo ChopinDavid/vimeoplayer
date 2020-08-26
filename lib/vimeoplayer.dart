@@ -67,10 +67,6 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
       //Обновление состояние приложения и перерисовка
       setState(() {});
     });
-
-    //На странице видео преимущество за портретной ориентацией
-    SystemChrome.setPreferredOrientations(
-        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
 
     super.initState();
