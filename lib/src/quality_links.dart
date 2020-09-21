@@ -1,14 +1,16 @@
-import 'package:http/http.dart' as http;
-import 'dart:convert';
 import 'dart:async';
 import "dart:collection";
+import 'dart:convert';
+
+import 'package:http/http.dart';
 
 //throw UnimplementedError();
 
 class QualityLinks {
   String videoId;
+  Client client;
 
-  QualityLinks(this.videoId);
+  QualityLinks(this.videoId, this.client);
 
   getQualitiesSync() {
     return getQualitiesAsync();
@@ -16,7 +18,7 @@ class QualityLinks {
 
   Future<SplayTreeMap> getQualitiesAsync() async {
     try {
-      var response = await http
+      var response = await client
           .get('https://player.vimeo.com/video/' + videoId + '/config');
       var jsonData =
           jsonDecode(response.body)['request']['files']['progressive'];

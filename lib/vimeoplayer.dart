@@ -4,6 +4,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:http/http.dart';
 import 'package:video_player/video_player.dart';
 
 import 'src/quality_links.dart';
@@ -17,9 +18,11 @@ class VimeoPlayer extends StatefulWidget {
   final Color progressIndicatorColor;
   final bool fullscreenable;
   final bool dismissOverlayOnPlay;
+  final Client client;
 
   VimeoPlayer({
     @required this.id,
+    @required this.client,
     this.overlayElementColor,
     this.playedColor = const Color(0xFF22A3D2),
     this.backgroundColor = const Color(0x5515162B),
@@ -55,7 +58,7 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
 
   @override
   void initState() {
-    _quality = QualityLinks(_id); //Create class
+    _quality = QualityLinks(_id, widget.client); //Create class
     //Инициализация контроллеров видео при получении данных из Vimeo
     _quality.getQualitiesSync().then((value) {
       _qualityValues = value;
