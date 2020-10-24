@@ -166,8 +166,10 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
                   }))));
 
           return Container(
-            child: Wrap(
-              children: children,
+            child: SingleChildScrollView(
+              child: Wrap(
+                children: children,
+              ),
             ),
           );
         });
